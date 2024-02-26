@@ -1,0 +1,39 @@
+{
+  "card": {
+    "title": "Tatasth beach villa",
+    "date_range": "Aug 2, 2023 - Aug 4, 2023",
+    "room_type": "Luxury Cottage Room",
+    "availability_message": "Only 2 Rooms Left. Hurry!",
+    "features": [
+      "Breakfast included"
+    ],
+    "price": "Rs 9,200.00",
+    "taxes_info": "(Incl. of all taxes)",
+    "images": [
+      {
+        "src": "images/img_rectangle865.png",
+        "alt": "rectangle865"
+      },
+      {
+        "src": "images/img_stars.svg",
+        "alt": "stars"
+      },
+      {
+        "src": "images/img_image22.png",
+        "alt": "imageTwentyTwo"
+      },
+      {
+        "src": "images/img_image24.png",
+        "alt": "imageTwentyFour"
+      },
+      {
+        "src": "images/img_image23.png",
+        "alt": "imageTwentyThree"
+      },
+      {
+        "src": "images/img_image25.png",
+        "alt": "imageTwentyFive"
+      }
+    ]
+  }
+}

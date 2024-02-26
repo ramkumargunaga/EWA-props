@@ -3,17 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@material-tailwind/react": "^2.1.9",
+=======
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@heroicons/react": "^2.1.1",
+    "@react-hook/media-query": "^1.1.1",
+>>>>>>> a5849d9f722850f6e8df2558fc5acf9c62a97c16
     "@tailwindcss/forms": "0.4.0",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "dotenv": "^16.0.1",
+<<<<<<< HEAD
+=======
+    "lucide-react": "^0.321.0",
+>>>>>>> a5849d9f722850f6e8df2558fc5acf9c62a97c16
     "prop-types": "^15.8.1",
     "react": "17.0.2",
     "react-alice-carousel": "^2.5.1",
     "react-datepicker": "^4.5.0",
     "react-dom": "17.0.2",
+<<<<<<< HEAD
+=======
+    "react-responsive-masonry": "^2.1.7",
+>>>>>>> a5849d9f722850f6e8df2558fc5acf9c62a97c16
     "react-router-dom": "6.0.2",
     "react-router-hash-link": "^2.4.3"
   },

@@ -3,67 +3,16 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Line, List, Text } from "components";
-
+import NavBar from "pages/UpdatedHeader/Navbar";
 const AboutusPage = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col items-center justify-end mx-auto pt-4 w-full">
+      <NavBar />
+
+      <div className="bg-white-A700 flex items-center justify-end mx-auto pt-4 w-full">
         <div className="flex flex-col items-center justify-end w-full">
-          <div className="flex md:flex-col flex-row font-opensans gap-[35px] items-start justify-between max-w-[1494px] mx-auto md:px-5 w-full">
-            <Img
-              className="h-[116px] md:h-auto object-cover"
-              src="images/img_ewablackmark.png"
-              alt="ewablackmark"
-            />
-            <div className="flex md:flex-1 md:flex-col flex-row md:gap-10 items-center justify-between md:mt-0 mt-[9px] p-[11px] w-[79%] md:w-full">
-              <div className="flex md:flex-col flex-row md:gap-10 gap-[74px] items-start justify-start md:ml-[0] ml-[17px] w-auto md:w-full">
-                <Text
-                  className="common-pointer text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-auto"
-                  size="txtOpenSansRomanSemiBold30"
-                  onClick={() => navigate("/")}
-                >
-                  Home
-                </Text>
-                <Text
-                  className="common-pointer text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-auto"
-                  size="txtOpenSansRomanSemiBold30"
-                  onClick={() => navigate("/roombooking")}
-                >
-                  Book{" "}
-                </Text>
-                <Text
-                  className="text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-auto"
-                  size="txtOpenSansRomanSemiBold30"
-                >
-                  About us
-                </Text>
-                <Text
-                  className="common-pointer text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-auto"
-                  size="txtOpenSansRomanSemiBold30"
-                  onClick={() => navigate("/location")}
-                >
-                  Location
-                </Text>
-                <Text
-                  className="common-pointer text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-auto"
-                  size="txtOpenSansRomanSemiBold30"
-                  onClick={() => navigate("/contact")}
-                >
-                  Contact us
-                </Text>
-              </div>
-              <Button
-                className="common-pointer cursor-pointer font-semibold min-w-[171px] md:mt-0 my-2 rounded-[23px] text-3xl sm:text-[26px] md:text-[28px] text-center"
-                onClick={() => navigate("/register")}
-                color="red_A400"
-                size="xs"
-              >
-                Register
-              </Button>
-            </div>
-          </div>
           <div className="flex md:flex-col flex-row font-inter md:gap-10 items-start justify-between max-w-[1438px] mt-[109px] mx-auto md:px-5 w-full">
             <div className="flex flex-col md:gap-10 gap-[63px] items-end justify-start mb-[146px]">
               <div className="h-[629px] mr-[3px] relative w-full">

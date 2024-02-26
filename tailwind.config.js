@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
  
+=======
+>>>>>>> a5849d9f722850f6e8df2558fc5acf9c62a97c16
 module.exports = {
   mode: "jit",
   content: [
