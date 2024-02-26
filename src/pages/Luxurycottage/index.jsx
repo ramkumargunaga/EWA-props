@@ -11,7 +11,7 @@ const LuxurycottagePage = () => {
     <>
       <div className="bg-white-A700 flex flex-col font-opensans items-center justify-end mx-auto pt-3.5 w-full">
         <div className="flex flex-col items-center justify-start w-full">
-          <div className="flex md:flex-col flex-row gap-[38px] items-start justify-between max-w-[1449px] mx-auto md:px-5 w-full">
+          {/* <div className="flex md:flex-col flex-row gap-[38px] items-start justify-between max-w-[1449px] mx-auto md:px-5 w-full">
             <Img
               className="h-[97px] md:h-auto md:mt-0 mt-1 object-cover"
               src="images/img_ewablackmark.png"
@@ -64,19 +64,27 @@ const LuxurycottagePage = () => {
                 Register
               </Button>
             </div>
+          </div> */}
+
+          <div className="w-[80%]">
+            <div className="relative w-full flex flex-col ">
+              <Img
+                className="h-[822px] md:h-auto mt-5 mx-auto  w-70%"
+                src="images/Frame2408.png"
+                alt="rectangle859"
+              />
+              <Text
+                className="relative text-6xl text-white-A700 bottom-52 left-28"
+                size="txtInterBold60Black900"
+              >
+                Luxury Cottage Room
+              </Text>
+            </div>
+
+            <div></div>
           </div>
-          <Img
-            className="h-[822px] md:h-auto max-w-[1330px] mt-5 mx-auto object-cover w-full"
-            src="images/img_rectangle859.png"
-            alt="rectangle859"
-          />
-          <div className="flex flex-col gap-[15px] items-start justify-start max-w-[1167px] mt-[78px] mx-auto md:px-5 w-full">
-            <Text
-              className="md:text-5xl text-6xl text-black-900"
-              size="txtInterBold60Black900"
-            >
-              Luxury Cottage Room
-            </Text>
+
+          {/* <div className="flex flex-col gap-[15px] items-start justify-start max-w-[1167px] mt-[78px] mx-auto md:px-5 w-full">
             <Text
               className="leading-[48.00px] sm:text-[31px] md:text-[33px] text-[35px] text-black-900 w-full"
               size="txtOpenSansRomanRegular35Black900"
@@ -85,7 +93,7 @@ const LuxurycottagePage = () => {
               experience with a spacious sitting area, luxury bedding and free
               Wi-Fi.
             </Text>
-          </div>
+          </div> */}
           <div className="border border-black-900_4f border-solid flex flex-col items-start justify-start max-w-[1276px] mt-[30px] mx-auto p-6 md:px-5 rounded-[17px] w-full">
             <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-[90%] md:w-full">
               <div className="flex flex-col gap-[19px] items-start justify-start w-[34%] md:w-full">
@@ -343,7 +351,7 @@ const LuxurycottagePage = () => {
               </div>
             </div>
           </div>
-          <div className="h-[582px] md:h-[627px] mt-[45px] md:px-5 relative w-full">
+          {/* <div className="h-[582px] md:h-[627px] mt-[45px] md:px-5 relative w-full">
             <footer className="absolute bottom-[0] flex font-opensans inset-x-[0] items-center justify-center mx-auto w-full">
               <div className="flex flex-col items-center justify-center w-full">
                 <div className="bg-red-A400_23 flex flex-col items-center justify-start p-[58px] md:px-10 sm:px-5 w-full">
@@ -484,7 +492,7 @@ const LuxurycottagePage = () => {
               src="images/img_component35.png"
               alt="componentThirtySix"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

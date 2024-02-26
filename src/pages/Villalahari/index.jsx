@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Img, Input, Line, List, Slider, Text } from "components";
 import VillaLahariFaq from "components/VillaLahariFaq";
 import VillaLahariFaq1 from "components/VillaLahariFaq1";
+import Accordion from "./AccordianFAQ";
 
 const VillalahariPage = () => {
   const navigate = useNavigate();
@@ -19,12 +20,7 @@ const VillalahariPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-poppins gap-10 justify-end mx-auto pt-[23px] w-full">
-        <Img
-          className="h-[89px] md:h-auto md:ml-[0] ml-[97px] mr-[1183px] object-cover w-[16%]"
-          src="images/img_ewablackmark.png"
-          alt="ewablackmark"
-        />
+      <div className="bg-white-A700 flex flex-col font-poppins gap-10 justify-end mx-auto pt-[23px] w-[90%]">
         <div className="flex flex-col items-center w-full">
           <div className="flex flex-col items-center justify-start max-w-7xl mx-auto md:px-5 w-full">
             <div className="bg-blue-900_0a flex flex-col items-center justify-start rounded-tl-[50px] rounded-tr-[50px] w-full">
@@ -568,15 +564,15 @@ const VillalahariPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col font-poppins items-center justify-start max-w-[912px] mt-[171px] mx-auto md:px-5 w-full">
-            <div className="bg-white-A700 flex flex-col gap-10 items-center justify-center p-14 md:px-10 sm:px-5 rounded-[20px] shadow-bs8 w-auto md:w-full">
+          <div className="flex flex-col font-poppins items-center justify-start mt-[100px] mx-auto md:px-5 w-[80%]">
+            <div className="bg-white-A700 flex flex-col gap-10 items-center justify-center p-14 md:px-10 sm:px-5 rounded-[20px] shadow-bs8 w-full">
               <Text
                 className="sm:text-4xl md:text-[38px] text-[40px] text-center text-indigo-900 w-auto"
                 size="txtPoppinsBold40"
               >
                 FAQs
               </Text>
-              <div className="flex flex-col items-start justify-start w-auto md:w-full">
+              {/* <div className="flex flex-col items-start justify-start w-auto md:w-full">
                 <VillaLahariFaq className="flex flex-col gap-2 items-start justify-start w-auto md:w-full" />
                 <List
                   className="flex flex-col items-center w-full"
@@ -591,10 +587,14 @@ const VillalahariPage = () => {
                     </React.Fragment>
                   ))}
                 </List>
+              </div> */}
+              <div>
+                <Accordion />
               </div>
             </div>
           </div>
-          <div className="h-[598px] md:h-[661px] mt-[90px] md:px-5 relative w-full">
+
+          {/* <div className="h-[598px] md:h-[661px] mt-[90px] md:px-5 relative w-full">
             <footer className="absolute bottom-[0] flex font-opensans inset-x-[0] items-center justify-center mx-auto w-full">
               <div className="flex flex-col items-center justify-center w-full">
                 <div className="bg-red-A400_23 flex flex-col items-center justify-start p-[58px] md:px-10 sm:px-5 w-full">
@@ -735,7 +735,7 @@ const VillalahariPage = () => {
               src="images/img_component35.png"
               alt="componentThirtySeven_One"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

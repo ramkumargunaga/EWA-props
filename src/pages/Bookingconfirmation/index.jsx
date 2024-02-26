@@ -10,12 +10,12 @@ const BookingconfirmationPage = () => {
   return (
     <>
       <div className="bg-white-A700 font-sourcesanspro h-[1202px] mx-auto pt-4 relative w-full">
-        <Img
+        {/* <Img
           className="h-[569px] mb-[undefinedpx] ml-auto mt-auto object-cover z-[1]"
           src="images/img_component38.png"
           alt="componentThirtyEight"
-        />
-        <div className="flex md:flex-col flex-row font-opensans md:gap-10 items-center justify-between max-w-[1172px] mb-[-32px] ml-auto mr-2 mt-[7px] p-[11px] md:px-5 w-full z-[1]">
+        /> */}
+        {/* <div className="flex md:flex-col flex-row font-opensans md:gap-10 items-center justify-between max-w-[1172px] mb-[-32px] ml-auto mr-2 mt-[7px] p-[11px] md:px-5 w-full z-[1]">
           <div className="flex md:flex-1 md:flex-col flex-row md:gap-10 gap-[74px] items-start justify-start md:ml-[0] ml-[17px] w-auto md:w-full">
             <Text
               className="common-pointer text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-auto"
@@ -61,22 +61,22 @@ const BookingconfirmationPage = () => {
           >
             Register
           </Button>
-        </div>
-        <Img
+        </div> */}
+        {/* <Img
           className="h-[116px] mb-[-55.23px] ml-[13px] object-cover w-[19%] z-[1]"
           src="images/img_ewablackmark.png"
           alt="ewablackmark_One"
-        />
-        <Img
+        /> */}
+        {/* <Img
           className="h-[494px] mb-[undefinedpx] mt-auto object-cover z-[1]"
           src="images/img_component35.png"
           alt="componentThirtySeven"
-        />
+        /> */}
         <div className="flex flex-col gap-8 items-center justify-start mt-auto mx-auto w-full">
           <div className="h-[640px] sm:h-[742px] md:h-[767px] max-w-[1440px] mx-auto md:px-5 relative w-full">
             <div className="absolute bottom-[0] flex flex-col inset-x-[0] items-center justify-start mx-auto w-full">
               <div className="flex flex-col gap-[42px] items-center justify-start w-full">
-                <div className="bg-white-A700 border-b border-black-900 border-solid flex flex-col items-center justify-end p-[30px] sm:px-5 shadow-bs5 w-full">
+                {/* <div className="bg-white-A700 border-b border-black-900 border-solid flex flex-col items-center justify-end p-[30px] sm:px-5 shadow-bs5 w-full">
                   <div className="flex flex-col items-center justify-start mt-[17px] w-[57%] md:w-full">
                     <div className="flex flex-col items-center justify-start w-full">
                       <div className="flex flex-col gap-[11px] items-center justify-start w-full">
@@ -133,7 +133,7 @@ const BookingconfirmationPage = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="bg-white-A700 border border-black-900 border-solid flex flex-col items-start justify-start p-[26px] sm:px-5 shadow-bs7 w-[97%] md:w-full">
                   <div className="flex flex-col gap-12 justify-start mb-[70px] mt-[38px] w-[89%] md:w-full">
                     <div className="flex sm:flex-col flex-row font-poppins gap-4 items-start justify-start w-[36%] md:w-full">
@@ -167,7 +167,7 @@ const BookingconfirmationPage = () => {
               alt="rectangle830"
             />
           </div>
-          <footer className="flex font-opensans items-center justify-center md:px-5 w-full">
+          {/* <footer className="flex font-opensans items-center justify-center md:px-5 w-full">
             <div className="flex flex-col items-center justify-center w-full">
               <div className="bg-red-A400_23 flex flex-col items-center justify-start p-8 sm:px-5 w-full">
                 <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between mb-[87px] w-[88%] md:w-full">
@@ -289,7 +289,7 @@ const BookingconfirmationPage = () => {
                 </Text>
               </div>
             </div>
-          </footer>
+          </footer> */}
         </div>
       </div>
     </>

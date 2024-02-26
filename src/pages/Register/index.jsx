@@ -10,8 +10,8 @@ const RegisterPage = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col items-center justify-end mx-auto pt-[17px] w-full">
-        <div className="flex flex-col items-center justify-start w-full">
-          <div className="flex md:flex-col flex-row font-opensans gap-[33px] items-start justify-between max-w-[1492px] mx-auto md:px-5 w-full">
+        <div className="flex flex-col items-center  justify-start w-[90%]">
+          {/* <div className="flex md:flex-col flex-row font-opensans gap-[33px] items-start justify-between max-w-[1492px] mx-auto md:px-5 w-full">
             <Img
               className="h-[116px] md:h-auto object-cover"
               src="images/img_ewablackmark.png"
@@ -62,7 +62,8 @@ const RegisterPage = () => {
                 Register
               </Text>
             </div>
-          </div>
+          </div> */}
+
           <Text
             className="mt-6 sm:text-[40px] md:text-[46px] text-[50px] text-indigo-900 text-shadow-ts"
             size="txtLexendDecaRegular50"
@@ -70,12 +71,64 @@ const RegisterPage = () => {
             Registration
           </Text>
           <Text
-            className="bg-red-A400 h-[74px] justify-center max-w-[1305px] md:max-w-full mt-[22px] sm:px-5 px-[35px] py-1.5 sm:text-[40px] md:text-[46px] text-[50px] text-shadow-ts text-white-A700 w-full"
+            className="bg-red-A400 h-[74px] justify-center max-w-[1305px] md:max-w-full rounded-[9px] mt-[22px] sm:px-5 px-[35px] py-1.5 sm:text-[40px] md:text-[46px] text-[50px] text-shadow-ts text-white-A700 w-full"
             size="txtInterSemiBold50"
           >
             Request Information
           </Text>
-          <div className="flex flex-col font-lexenddeca items-start justify-start max-w-[1234px] mt-[88px] mx-auto md:px-5 w-full">
+          <input
+            type="text"
+            placeholder="Your Name*"
+            className="font-semibold md:font-extrabold h-14 p-4 placeholder:text-black-900_a5 rounded-[9px] text-[13.08px] border-none  text-left w-[98%] mt-[55px] bg-gray-300"
+            title="Please enter your name"
+            required
+          />
+
+          <input
+            type="text"
+            placeholder="Mobile Number*"
+            className="font-semibold md:font-extrabold h-14 p-4 placeholder:text-black-900_a5  text-[13.08px] rounded-[9px] border-none  text-left w-[98%] mt-[55px] bg-gray-300"
+            title="Please enter Mobile Number"
+            required
+          />
+
+          <input
+            type="email"
+            placeholder="Email ID*"
+            className="font-semibold md:font-extrabold h-14 p-4 placeholder:text-black-900_a5  text-[13.08px] rounded-[9px] border-none  text-left w-[98%] mt-[55px] bg-gray-300"
+            title="Enter your email"
+            required
+          />
+
+          <input
+            type="number"
+            placeholder="No Of Guests*"
+            className="font-semibold md:font-extrabold h-14 p-4 placeholder:text-black-900_a5 rounded-[9px]  text-[13.08px] border-none  text-left w-[98%] mt-[55px] bg-gray-300"
+            title="Enter Number Of Guests"
+            required
+          />
+
+          <input
+            type="date"
+            placeholder="Check in Date*"
+            className="font-semibold md:font-extrabold h-14 p-4 placeholder:text-black-900_a5 rounded-[9px] text-[13.08px] border-none  text-left w-[98%] mt-[55px] bg-gray-300"
+            title="Enter Check in date"
+            required
+          />
+
+          <input
+            type="date"
+            placeholder="Check out Date*"
+            className="font-semibold md:font-extrabold h-14 p-4 placeholder:text-black-900_a5 rounded-[9px] text-[13.08px] border-none  text-left w-[98%] mt-[55px] bg-gray-300"
+            title="Enter Check out date"
+            required
+          />
+
+          <button className="bg-red-A400 mt-[55px] w-[60%] rounded-[9px] h-14">
+            Submit
+          </button>
+
+          {/* <div className="flex flex-col font-lexenddeca items-start justify-start max-w-[1234px] mt-[88px] mx-auto px-5 w-full">
             <Text
               className="sm:text-4xl md:text-[38px] text-[40px] text-black-900"
               size="txtLexendDecaRegular40"
@@ -87,7 +140,9 @@ const RegisterPage = () => {
                 {" "}
                 *
               </span>
+              
             </Text>
+            
             <Text
               className="bg-gray-50_02 border border-black-900_7f border-solid h-[69px] justify-center max-w-[1234px] md:max-w-full mt-3 sm:px-5 px-[35px] py-[15px] rounded-[9px] text-3xl sm:text-[26px] md:text-[28px] text-gray-700 w-full"
               size="txtLexendDecaLight30"
@@ -180,19 +235,19 @@ const RegisterPage = () => {
             >
               Check out date
             </Text>
-          </div>
+          </div> */}
           <div className="font-inter h-[581px] md:h-[609px] mt-[29px] md:px-5 relative w-full">
             <div className="flex flex-col h-full items-center justify-start m-auto w-full">
               <div className="flex flex-col gap-[52px] items-center justify-start w-full">
-                <div className="bg-red-A400 flex flex-col items-center justify-start p-[11px] shadow-bs">
+                {/* <div className="bg-red-A400 flex flex-col items-center justify-start p-[11px] shadow-bs">
                   <Text
                     className="mb-0.5 sm:text-4xl md:text-[38px] text-[40px] text-white-A700"
                     size="txtInterSemiBold40"
                   >
                     Submit
                   </Text>
-                </div>
-                <footer className="flex font-opensans items-center justify-center w-full">
+                </div> */}
+                {/* <footer className="flex font-opensans items-center justify-center w-full">
                   <div className="flex flex-col items-center justify-center w-full">
                     <div className="bg-red-A400_23 flex flex-col items-center justify-start p-[58px] md:px-10 sm:px-5 w-full">
                       <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between mb-[61px] w-[90%] md:w-full">
@@ -317,10 +372,10 @@ const RegisterPage = () => {
                       </Text>
                     </div>
                   </div>
-                </footer>
+                </footer> */}
               </div>
             </div>
-            <Img
+            {/* <Img
               className="absolute h-[577px] inset-y-[0] my-auto object-cover right-[0]"
               src="images/img_component38.png"
               alt="componentThirtySeven"
@@ -329,7 +384,7 @@ const RegisterPage = () => {
               className="absolute bottom-[0] h-[512px] left-[0] object-cover"
               src="images/img_component35.png"
               alt="componentThirtySix"
-            />
+            /> */}
           </div>
         </div>
       </div>

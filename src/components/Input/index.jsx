@@ -31,6 +31,8 @@ const Input = React.forwardRef(
       children,
       errors = [],
       label = "",
+      pattern = "",
+      title = "",
       prefix,
       suffix,
       onChange,
@@ -61,6 +63,8 @@ const Input = React.forwardRef(
             className={`${className} bg-transparent border-0`}
             type={type}
             name={name}
+            title={title}
+            pattern={pattern}
             onChange={handleChange}
             placeholder={placeholder}
             {...restProps}

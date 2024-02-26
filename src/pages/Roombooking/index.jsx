@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
@@ -7,222 +7,144 @@ import Process from "./Process";
 import BookingForm from "./BookingForm";
 import RoomSummary from "./RoomSummary";
 import PaymentSummary from "./PaymentSummary";
+import BillingInfo from "./../Payment/BillingInfo";
+import BookingConfirm from "./BookingConfirm";
 
 const RoombookingPage = () => {
   const navigate = useNavigate();
+  const [step, setStep] = useState(1);
+  //   const [formData, setFormData] = useState({
+  //     name: "",
+  //     email: "",
+  //     password: "",
+  //   });
+
+  //   const handleChange = (e) => {
+  //     const { name, value } = e.target;
+  //     setFormData((prevState) => ({
+  //       ...prevState,
+  //       [name]: value,
+  //     }));
+  //   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here
+    console.log(formData);
+  };
+
+  const nextStep = () => {
+    setStep((prevStep) => prevStep + 1);
+  };
+
+  const prevStep = () => {
+    setStep((prevStep) => prevStep - 1);
+  };
 
   return (
     <>
       <div className="bg-white-A700 flex flex-col  font-opensans items-center justify-end  pt-4 w-[100%]">
-        <div className="flex flex-col items-end justify-start w-full">
-          <div className="flex md:flex-col flex-row gap-[30px] items-start justify-between max-w-[1489px] mx-auto md:px-5 w-full">
-            {/* <Img
-              className="h-[116px] md:h-auto object-cover"
-              src="images/img_ewablackmark.png"
-              alt="ewablackmark"
-            />
-            <div className="flex md:flex-1 md:flex-col flex-row md:gap-10 items-center justify-between md:mt-0 mt-1 p-[11px] w-[79%] md:w-full">
-              <div className="flex md:flex-col flex-row md:gap-10 gap-[74px] items-start justify-start md:ml-[0] ml-[17px] w-auto md:w-full">
-                <Text
-                  className="common-pointer text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-auto"
-                  size="txtOpenSansRomanSemiBold30"
-                  onClick={() => navigate("/")}
+        <div className="w-[95%] h-auto flex  items-center justify-center mb-8">
+          <div className="w-full h-auto  flex flex-col justify-center items-center px-8 py-10 shadow-bs5 border-2 ">
+            <div className="flex  justify-center h-auto ">
+              <div>
+                <div
+                  className={`w-12 h-12 mr-1 rounded-full ${
+                    step >= 1 ? "bg-green-700" : "bg-gray-200"
+                  }`}
                 >
-                  Home
-                </Text>
-                <Text
-                  className="text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-auto"
-                  size="txtOpenSansRomanSemiBold30"
-                >
-                  Book{" "}
-                </Text>
-                <Text
-                  className="common-pointer text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-auto"
-                  size="txtOpenSansRomanSemiBold30"
-                  onClick={() => navigate("/aboutus")}
-                >
-                  About us
-                </Text>
-                <Text
-                  className="common-pointer text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-auto"
-                  size="txtOpenSansRomanSemiBold30"
-                  onClick={() => navigate("/location")}
-                >
-                  Location
-                </Text>
-                <Text
-                  className="common-pointer text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-auto"
-                  size="txtOpenSansRomanSemiBold30"
-                  onClick={() => navigate("/contact")}
-                >
-                  Contact us
-                </Text>
+                  <span className=" relative top-3 text-white text-sm flex items-center justify-center">
+                    {step >= 1 ? "1" : "1"}
+                  </span>
+                </div>
               </div>
-              <Button
-                className="common-pointer cursor-pointer font-semibold min-w-[171px] md:mt-0 my-2 rounded-[23px] text-3xl sm:text-[26px] md:text-[28px] text-center"
-                onClick={() => navigate("/register")}
-                color="red_A400"
-                size="xs"
+              <div
+                className={`relative top-6 w-72 md:w-20 h-1 bg-gray-300 mr-1 ${
+                  step >= 2 ? "bg-green-700" : ""
+                }`}
+              ></div>
+              <div>
+                <div
+                  className={`w-12 h-12 mr-1 rounded-full ${
+                    step >= 2 ? "bg-green-700" : "bg-gray-200"
+                  }`}
+                >
+                  <span className="relative top-3 text-white text-sm flex items-center justify-center">
+                    {step >= 2 ? "2" : "2"}
+                  </span>
+                </div>
+              </div>
+              <div
+                className={`relative top-6 w-72 md:w-20  h-1 bg-gray-300 ${
+                  step >= 3 ? "bg-green-700" : ""
+                }`}
+              ></div>
+              <div>
+                <div
+                  className={`w-12 h-12 ml-1 rounded-full ${
+                    step >= 3 ? "bg-green-700" : "bg-gray-200"
+                  }`}
+                >
+                  <span className="relative top-3 text-white text-sm flex items-center justify-center">
+                    {step >= 3 ? "3" : "3"}
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <span
+                className={`relative right-44 md:right-4 mr-2 ${
+                  step >= 1 ? "text-green-700" : ""
+                }`}
               >
-                Register
-              </Button>
-            </div> */}
+                Your Information
+              </span>
+              <span
+                className={`relative left-4 md:left-4 mr-2 ${
+                  step >= 2 ? "text-green-700" : ""
+                }`}
+              >
+                Payment Information
+              </span>
+              <span
+                className={`relative left-48 md:left-7 ${
+                  step >= 3 ? "text-green-700" : ""
+                }`}
+              >
+                Booking Confirmation
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row md:flex-col items-end justify-start w-[95%] mx-2  ">
+          <div className="w-full h-auto flex items-center justify-center ">
+            <div className="w-full flex flex-col items-center">
+              {step === 1 && (
+                <div className="w-[90%]">
+                  <BookingForm nextStep={nextStep} />
+                </div>
+              )}
+
+              {step === 2 && (
+                <div className="w-[80%]">
+                  <BillingInfo nextStep={nextStep} />
+                </div>
+              )}
+
+              {step === 3 && (
+                <div>
+                  <BookingConfirm />
+                </div>
+              )}
+            </div>
           </div>
 
-          <div className="w-full h-fit items-center justify-center px-[10px]">
-            <Process />
-          </div>
-
-          <div className="w-full h-fit py-[15px] flex flex-col items-center justify-center">
-            <BookingForm />
-            <div className="w-full h-fit py-[15px] flex flex-col items-center justify-center">
+          {step === 3 || (
+            <div className="w-full h-fit py-[15px] flex flex-col  items-center justify-center">
               <RoomSummary />
               <PaymentSummary />
             </div>
-          </div>
-
-          {/* <div className="font-opensans h-[1396px] sm:h-[1400px] md:h-[2263px] mt-1 md:px-5 relative w-full">
-            <div className="flex flex-col h-full items-center justify-start m-auto w-full">
-              <div className="flex flex-col gap-[23px] items-center justify-start w-full">
-                <footer className="flex items-center justify-center w-full">
-                  <div className="flex flex-col items-center justify-center w-full">
-                    <div className="bg-red-A400_23 flex flex-col items-center justify-start p-[58px] md:px-10 sm:px-5 w-full">
-                      <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between mb-[61px] w-[90%] md:w-full">
-                        <div className="flex flex-col justify-start md:mt-0 mt-2 w-[26%] md:w-full">
-                          <Img
-                            className="h-[102px] md:h-auto mr-[62px] object-cover w-[81%]"
-                            src="images/img_ewablackmark.png"
-                            alt="ewablackmark_One"
-                          />
-                          <Text
-                            className="leading-[28.00px] md:ml-[0] ml-[94px] mt-0.5 text-black-900 text-center text-xl w-[71%] sm:w-full"
-                            size="txtOpenSansRegular20Black900"
-                          >
-                            We catalyze your luxurious vacation
-                          </Text>
-                        </div>
-                        <ul className="flex flex-col items-start justify-start w-[67%] md:w-full common-column-list">
-                          <li>
-                            <a href="javascript:">
-                              <div className="flex flex-row font-lato sm:gap-10 items-center justify-between">
-                                <Text
-                                  className="text-2xl md:text-[22px] text-black-900 text-center sm:text-xl"
-                                  size="txtLatoSemiBold24"
-                                >
-                                  Address
-                                </Text>
-                                <Text
-                                  className="text-2xl md:text-[22px] text-black-900 text-center sm:text-xl"
-                                  size="txtLatoSemiBold24"
-                                >
-                                  Follow Us
-                                </Text>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="javascript:">
-                              <div className="flex md:flex-col flex-row font-opensans md:gap-10 items-start justify-between mt-[22px]">
-                                <Text
-                                  className="leading-[32.00px] text-black-900 text-xl"
-                                  size="txtOpenSansRomanRegular20"
-                                >
-                                  <>
-                                    D’Souza Complex, next to Shri Veera Maruti
-                                    <br />
-                                    Mandir, Hosabettu, Kulai, Mangaluru, <br />
-                                    Karnataka 575019
-                                  </>
-                                </Text>
-                                <div className="flex flex-row gap-8 items-start justify-start md:mt-0 mt-2 w-auto">
-                                  <Button
-                                    className="flex h-8 items-center justify-center w-8"
-                                    shape="circle"
-                                  >
-                                    <Img
-                                      className="h-3"
-                                      src="images/img_info.svg"
-                                      alt="info"
-                                    />
-                                  </Button>
-                                  <Button
-                                    className="flex h-8 items-center justify-center w-8"
-                                    shape="circle"
-                                  >
-                                    <Img
-                                      className="h-3.5"
-                                      src="images/img_link.svg"
-                                      alt="link"
-                                    />
-                                  </Button>
-                                  <Button
-                                    className="flex h-8 items-center justify-center w-8"
-                                    shape="circle"
-                                  >
-                                    <Img
-                                      src="images/img_facebook.svg"
-                                      alt="facebook"
-                                    />
-                                  </Button>
-                                  <Button
-                                    className="flex h-8 items-center justify-center w-8"
-                                    shape="circle"
-                                  >
-                                    <Img
-                                      src="images/img_trash.svg"
-                                      alt="trash"
-                                    />
-                                  </Button>
-                                  <Button
-                                    className="flex h-8 items-center justify-center w-8"
-                                    shape="circle"
-                                    size="sm"
-                                  >
-                                    <Img
-                                      src="images/img_socialicon.svg"
-                                      alt="socialicon"
-                                    />
-                                  </Button>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="javascript:"
-                              className="mt-9 text-black-900 text-xl"
-                            >
-                              <Text size="txtOpenSansRomanRegular20">
-                                support@ewaproperties.com
-                              </Text>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="bg-red-A400 flex flex-col font-lato items-center justify-start p-[19px] w-full">
-                      <Text
-                        className="mb-[3px] text-center text-white-A700 text-xl"
-                        size="txtLatoBold20"
-                      >
-                        © Ewa properties. All Rights Reserved.
-                      </Text>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-            </div>
-            <Img
-              className="absolute bottom-[0] h-[582px] object-cover right-[0]"
-              src="images/img_component38.png"
-              alt="componentThirtySeven"
-            />
-            <Img
-              className="absolute bottom-[0] h-[496px] left-[0] object-cover"
-              src="images/img_component35.png"
-              alt="componentThirtySeven_One"
-            />
-          </div> */}
+          )}
         </div>
       </div>
     </>
