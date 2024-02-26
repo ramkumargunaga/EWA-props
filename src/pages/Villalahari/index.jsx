@@ -5,10 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Img, Input, Line, List, Slider, Text } from "components";
 import VillaLahariFaq from "components/VillaLahariFaq";
 import VillaLahariFaq1 from "components/VillaLahariFaq1";
-<<<<<<< HEAD
 import Accordion from "./AccordianFAQ";
-=======
->>>>>>> a5849d9f722850f6e8df2558fc5acf9c62a97c16
 
 const VillalahariPage = () => {
   const navigate = useNavigate();
@@ -575,14 +572,12 @@ const VillalahariPage = () => {
               >
                 FAQs
               </Text>
-              
+
               <div>
                 <Accordion />
               </div>
             </div>
           </div>
-
-          
         </div>
       </div>
     </>

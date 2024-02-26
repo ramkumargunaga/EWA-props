@@ -3,10 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Input, Line, Text } from "components";
-<<<<<<< HEAD
-=======
 import CardComponent from "./CardComponent";
->>>>>>> a5849d9f722850f6e8df2558fc5acf9c62a97c16
 
 const CheckavailabilityPage = () => {
   const navigate = useNavigate();
@@ -407,7 +404,6 @@ const CheckavailabilityPage = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <div className="bg-white-A700 border border-black-900_7f border-solid flex flex-col font-opensans items-center justify-start max-w-[1363px] mt-[29px] mx-auto p-6 md:px-5 rounded-[50px] shadow-bs w-full">
           <div className="flex md:flex-col flex-row md:gap-[51px] items-start justify-between mb-0.5 w-[96%] md:w-full">
             <Img
@@ -680,9 +676,6 @@ const CheckavailabilityPage = () => {
             </div>
           </div>
         </div>
-=======
-
->>>>>>> a5849d9f722850f6e8df2558fc5acf9c62a97c16
         <div className="font-opensans h-[573px] md:h-[576px] mt-4 md:px-5 relative w-full">
           <footer className="absolute bottom-[0] flex inset-x-[0] items-center justify-center mx-auto w-full">
             <div className="flex flex-col items-center justify-center w-full">
