@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Button from "./Button";
-import menuItems from "./MenuItems";
 import "./NavBar.css";
 import { Img, Text } from "components";
+import Button from "./../Button/Button";
+import menuItems from "./../MenuItems/MenuItems";
 const NavBar = () => {
   const [active, setActive] = useState(false);
 
@@ -11,7 +11,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-img">
+    <div className="h-auto mb-[70px]">
       <div className="nav-bar">
         <nav className="navbar">
           <div className="navbar-logo">

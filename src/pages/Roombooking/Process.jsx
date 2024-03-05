@@ -14,7 +14,7 @@ function Process() {
             1
           </Text>
           <Text
-            className="mb-[5px] text-base text-black-900 text-center"
+            className="mb-[5px] text-base text-black-900 text-center md:w-[50%]"
             size="txtOpenSansRomanSemiBold16"
           >
             Your Information

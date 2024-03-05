@@ -6,7 +6,7 @@ const menuItems = [
   },
   {
     title: "Book",
-    url: "checkavailability",
+    url: "roombooking",
     cName: "nav-links",
   },
   {

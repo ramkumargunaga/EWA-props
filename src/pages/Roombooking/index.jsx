@@ -9,6 +9,8 @@ import RoomSummary from "./RoomSummary";
 import PaymentSummary from "./PaymentSummary";
 import BillingInfo from "./../Payment/BillingInfo";
 import BookingConfirm from "./BookingConfirm";
+import NavBar from "./../Navbar/Navbar";
+import Footer from "pages/UpdatedHeader/Footer";
 
 const RoombookingPage = () => {
   const navigate = useNavigate();
@@ -43,7 +45,8 @@ const RoombookingPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col  font-opensans items-center justify-end  pt-4 w-[100%]">
+      <NavBar />
+      <div className="bg-white-A700 flex flex-col  font-opensans items-center justify-end my-28 pt-4 w-[100%]">
         <div className="w-[95%] h-auto flex  items-center justify-center mb-8">
           <div className="w-full h-auto  flex flex-col justify-center items-center px-8 py-10 shadow-bs5 border-2 ">
             <div className="flex  justify-center h-auto ">
@@ -93,7 +96,7 @@ const RoombookingPage = () => {
             </div>
             <div>
               <span
-                className={`relative right-44 md:right-4 mr-2 ${
+                className={`relative right-44 md:right-4 md:inline mr-2 ${
                   step >= 1 ? "text-green-700" : ""
                 }`}
               >
@@ -147,6 +150,7 @@ const RoombookingPage = () => {
           )}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

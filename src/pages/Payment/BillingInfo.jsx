@@ -79,7 +79,7 @@ function BillingInfo({ nextStep }) {
             ></Input>
 
             <Button
-              className="common-pointer cursor-pointer font-bold font-sourcesanspro mb-[26px]  mt-20 outline outline-[0.5px] outline-black-900_1e rounded text-[17.44px] text-center"
+              className="common-pointer cursor-pointer font-bold md:block font-sourcesanspro mb-[26px]  mt-20 outline outline-[0.5px] outline-black-900_1e rounded text-[17.44px] text-center"
               onClick={nextStep}
               color="amber_600_01"
               size="xl"

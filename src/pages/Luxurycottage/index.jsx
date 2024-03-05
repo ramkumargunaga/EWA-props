@@ -3,15 +3,17 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Line, Text } from "components";
+import Counter from "./Counter";
+import NavBar from "./../Navbar/Navbar";
+import Footer from "./../UpdatedHeader/Footer";
 
 const LuxurycottagePage = () => {
-  const navigate = useNavigate();
-
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-opensans items-center justify-end mx-auto pt-3.5 w-full">
-        <div className="flex flex-col items-center justify-start w-full">
-         
+      <NavBar />
+
+      <div className="bg-white-A700 flex flex-col font-opensans items-center justify-end mx-auto pt-3.5  mt-12 w-full">
+        <div className="flex flex-col items-center justify-start w-full my-12">
           <div className="w-[80%]">
             <div className="relative w-full flex flex-col ">
               <Img
@@ -20,18 +22,15 @@ const LuxurycottagePage = () => {
                 alt="rectangle859"
               />
               <Text
-                className="relative text-6xl text-white-A700 bottom-52 left-28"
+                className="relative md:text-xl md:left-11 md:bottom-16 text-6xl text-white-A700 bottom-52 left-28"
                 size="txtInterBold60Black900"
               >
                 Luxury Cottage Room
               </Text>
             </div>
-
-            <div></div>
           </div>
 
-         
-          <div className="border border-black-900_4f border-solid flex flex-col items-start justify-start max-w-[1276px] mt-[30px] mx-auto p-6 md:px-5 rounded-[17px] w-full">
+          <div className="border border-black-900_4f border-solid flex flex-col items-start justify-start max-w-[1276px] mt-[30px] mx-auto  p-6 md:px-5 rounded-[17px] w-full md:w-[90%]">
             <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-[90%] md:w-full">
               <div className="flex flex-col gap-[19px] items-start justify-start w-[34%] md:w-full">
                 <div className="bg-gray-400_01 h-[339px] relative rounded-[11px] w-full">
@@ -258,27 +257,9 @@ const LuxurycottagePage = () => {
                 >
                   2 Adults, 0 Childern
                 </Text>
-                <div className="border border-red-A400_7f border-solid flex flex-row items-center justify-start mt-8 rounded-[20px] w-[88%] md:w-full">
-                  <Text
-                    className="ml-7 text-base text-black-900"
-                    size="txtOpenSansRomanExtraBold16"
-                  >
-                    _
-                  </Text>
-                  <Button
-                    className="cursor-pointer font-bold min-w-[54px] ml-[21px] text-base text-center"
-                    shape="square"
-                    color="red_A400_1e"
-                  >
-                    2
-                  </Button>
-                  <Text
-                    className="ml-[19px] text-base text-black-900 text-center"
-                    size="txtOpenSansRomanBold16Black900"
-                  >
-                    +
-                  </Text>
-                </div>
+
+                <Counter />
+
                 <Text
                   className="mt-[19px] text-base text-red-A700"
                   size="txtOpenSansRomanSemiBold16RedA700"
@@ -288,9 +269,13 @@ const LuxurycottagePage = () => {
               </div>
             </div>
           </div>
-          
+          <button className=" relative mt-9 h-10 w-[130px] bg-red-A400 rounded-3xl right-20">
+            Book Now
+          </button>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };
