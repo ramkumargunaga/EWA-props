@@ -125,7 +125,7 @@ const RegisterPage = () => {
               />
 
               <button
-                className="bg-red-A400 mt-[55px] w-[98%] rounded-[9px] h-14"
+                className="md:block bg-red-A400 mt-[55px] w-[98%] rounded-[9px] h-14"
                 type="submit"
               >
                 Submit
